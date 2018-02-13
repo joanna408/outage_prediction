@@ -1,0 +1,11 @@
+To schedule a cron job:
+- first, check the timezone you're in by entering "date" at the command line. (wasted a good amount of time at this part 
+because I was going by my timezone)
+- enter "crontab -e" at the command line
+- enter the following:
+
+# Haven't gotten this to work, but hope to so we can get hourly updates to check if it's working
+MAILTO="joanna.huang@berkeley.edu" 
+
+# Below cron job works- edit the MIN and HR accordingly
+57 * * * * /home/w205/w205_final_project/final_thread/run_bash.sh
